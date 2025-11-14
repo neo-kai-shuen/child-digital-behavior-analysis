@@ -1,26 +1,47 @@
 # Data Warehousing and Analytics in the Cloud
 
-## Relating Physical Activity to Problematic Internet Use
-
-#### Objectives
-This project aims to make a prediction on the level of problematic internet use exhibited by children by analysing their physical activity through fitness data. This aids in identifying early signs and indicators of problematic internet and technology use in children, allowing for prompt interventions in the earlier stages of recognising this problem that they might have and to eventually encourage and inculcate healthier digital habits in children. In the long-term, this better equips children in navigating the digital landscape responsibly.
+## University of Arizona - INFO531 Data Warehousing and Analytics in the Cloud
 
 
-#### Tasks
-1. Predict the level of problematic internet use by analysing fitness data 
-2. Run various classification models
-3. Predict class labels for internet use
-4. Compare accuracy, prediction, recall and F1 score across models
+#### Problem
+Excessive internet and technology use among children can lead to problematic behaviors, but early signs are often difficult to detect. This project aims to predict levels of problematic internet use by analyzing children’s physical activity data, enabling early identification and intervention to promote healthier digital habits and responsible technology use.
 
-#### Models
-- Decision Tree
-- Random Forest
-- KNN
-- Gradient Boosting
 
-#### References
-- To view training dataset: [train.csv](https://github.com/kai-shuen-neo/dw-InternetUse/blob/main/train.csv)
-- To view testing dataset: [test.csv](https://github.com/kai-shuen-neo/dw-InternetUse/blob/main/test.csv)
-- To view code: [model_analysis_final_version.ipynb](https://github.com/kai-shuen-neo/dw-InternetUse/blob/main/model_analysis_final_version.ipynb)
-- To view report: [INFO531_Project_Report_Neo.pdf](https://github.com/kai-shuen-neo/dw-InternetUse/blob/main/INFO531_Project_Report_Neo.pdf)
-- To view information page: [child-mind-institute-problematic-internet-use/data](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/data)
+#### Data source
+The project uses data from the Healthy Brain Network (HBN) dataset, which includes health, physical activity, and internet usage information for 5,000 individuals aged 5–22. The target variable is the Severity Impairment Index (SII), measuring problematic internet use. The dataset, available on Kaggle, includes train.csv and test.csv files.
+
+
+#### Approach
+The project follows a structured data preparation and analysis workflow. First, data discovery involves understanding the dataset, checking variable types, distributions, correlations, and identifying quality issues such as missing values, duplicates, or inconsistencies. Next, data cleaning and transformation addresses these issues by handling missing values (imputation or removal), standardizing and normalizing variables, converting categorical data to numerical, correcting outliers, and removing or creating relevant features. Finally, the processed data is used for exploratory data analysis, statistical evaluation, and machine learning modeling to predict problematic internet use in children.
+
+
+#### Key results
+The data preparation phase resulted in cleaned and processed training (3960 records, 82 features) and testing datasets (20 records, 59 features) with no missing values. The target variable, Severity Impairment Index (SII), was categorized into four levels: None, Mild, Moderate, and Severe. Correlation analysis highlighted relationships between predictors and the response, guiding feature selection.
+
+Several machine learning models were trained and evaluated to predict problematic internet use based on physical activity and related features:
+1. Decision Tree – produced categorical predictions with associated performance metrics and confusion matrix.
+2. Random Forest – ensemble model improved classification accuracy over a single decision tree.
+3. Gradient Boosting – iterative ensemble approach enhanced prediction performance.
+4. K-Nearest Neighbors (KNN) – classified observations based on nearest feature neighbors.
+
+All models were validated using train-test splits, with performance assessed via confusion matrices and standard classification metrics, demonstrating the feasibility of predicting levels of problematic internet use from the dataset.
+
+
+#### Conclusion
+Among the models evaluated, Random Forest provided the best balance of high performance and low overfitting risk, achieving an accuracy of 99.6% along with strong precision, recall, and F-scores. While Decision Tree and Gradient Boosting achieved perfect scores, they risk overfitting. K-Nearest Neighbors performed the worst, with significantly lower accuracy and metric scores. Overall, Random Forest is the recommended model for predicting levels of problematic internet use in children based on physical activity data.
+
+
+#### Technical stack
+The project was implemented in **Python** using **Jupyter Notebook (Anaconda)**. Key libraries and tools included:
+* **Data manipulation & analysis:** `pandas`, `numpy`
+* **Visualization:** `matplotlib`, `seaborn`
+* **Statistical analysis:** `scipy`, `sklearn`
+* **Machine learning models:** `DecisionTreeClassifier`, `RandomForestClassifier`, `GradientBoostingClassifier`, `KNeighborsClassifier`
+* **Model evaluation & validation:** `train_test_split`, `KFold`, `cross_val_score`, `confusion_matrix`, `accuracy_score`, `precision_score`, `recall_score`, `f1_score`, `fbeta_score`, `roc_auc_score`, `classification_report`
+
+
+#### Data visualisations
+
+
+
+
