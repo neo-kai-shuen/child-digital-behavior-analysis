@@ -1,4 +1,4 @@
-# Data Warehousing and Analytics in the Cloud
+# Predicting Problematic Internet Use in Children Using Physical Activity Data
 
 ## University of Arizona - INFO531 Data Warehousing and Analytics in the Cloud
 
