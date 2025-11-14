@@ -42,6 +42,24 @@ The project was implemented in **Python** using **Jupyter Notebook (Anaconda)**.
 
 #### Data visualisations
 
+<img width="2464" height="2411" alt="image" src="https://github.com/user-attachments/assets/b0f995e6-fbb6-45ff-88ad-4599637fc2c7" />
+
+<img width="649" height="545" alt="image" src="https://github.com/user-attachments/assets/9f27ddbb-a016-48bc-b8eb-53e919b585ed" />
+
+<img width="649" height="545" alt="image" src="https://github.com/user-attachments/assets/1df7e415-ecf2-46be-8f2d-7d61720d111c" />
+
+<img width="649" height="545" alt="image" src="https://github.com/user-attachments/assets/79be93da-1311-4a05-a19f-55e8d301338f" />
+
+<img width="649" height="545" alt="image" src="https://github.com/user-attachments/assets/03ed8dc0-ebaa-4e3c-bbd0-38cfaa646a83" />
+
+
+
+
+
+
+
+
+
 
 
 
